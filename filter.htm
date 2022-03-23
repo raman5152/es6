@@ -1,0 +1,17 @@
+<script>
+    myarr=[
+        {id:1,name:'ram',role:'anluar dev'},
+        {id:2,name:'raman',role:'testing'},
+        {id:3,name:'ramu',role:'anluar dev'},
+        {id:4,name:'ramanji',role:'anluar dev'},
+        {id:5,name:'ram1',role:'testing'},
+    ]
+    const dev=myarr.filter(function(emp){
+        return emp.role==='anluar dev';
+    });
+    console.log("developers", dev);
+    const dev1=myarr.filter(function(emp){
+        return emp.role==='testing';
+    });
+    console.log("testing", dev1);
+</script>
