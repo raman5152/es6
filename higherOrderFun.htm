@@ -1,0 +1,21 @@
+<script>
+    const data=[10,20,30];
+    function calwith2(x){
+        return x*2;
+    }
+  function calwith1(y){
+      return y*1;
+  }
+  Array.prototype.calculate= function(calculate){
+      const outout=[];
+      for(var i=0;i< this.length;i++){
+          outout.push(calculate(this[i]))
+      }
+      return outout;
+  }
+document.write(data.calculate(calwith2));
+document.write("<br>");
+document.write(data.calculate(calwith1));
+document.write("<br>");
+document.write(data.map(calwith2))
+</script>
