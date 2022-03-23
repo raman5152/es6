@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread oprator in es6</title>
+</head>
+<body>
+    <script>
+        // let myArray=['raman','syam','ram'];
+        // document.write(...myArray + "<br>");
+        // "<br>";
+        // let myaa=["a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"];
+        // document.write(...myaa);
+        // "<br>";
+
+        // // obetects
+
+        const emp ={
+            name:"ramanj",
+            job:"angular developer"
+        };
+        const personaldetails={
+            age:28
+        };
+        const cloneemp={...emp};
+        document.write(emp);
+        document.write(cloneemp);
+        const empDetails={...emp,...personaldetails};
+    </script>
+</body>
+</html>
