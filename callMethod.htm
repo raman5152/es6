@@ -1,0 +1,16 @@
+<script>
+    const person={
+        fullName: function(){
+            return this.fname + " " + this.lname;
+        }
+    }
+    const person1={
+        fname:"ram",
+        lname: "vu"
+    }
+    const person2={
+        fname:"sy",
+        lname:"vuyy"
+    }
+    document.write(person.fullName.call(person1));
+</script>
